@@ -1,0 +1,81 @@
+plugins {
+    id 'com.android.application'
+    id 'com.hihonor.mcs.asplugin'
+}
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.hihonor.demo.suggestionkittool"
+        minSdk 26
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    compileSdkVersion 31
+
+    signingConfigs {
+        debug {
+            keyAlias 'honor'
+            keyPassword '2024.07.11kittooldemo2024.07.11'
+            storeFile file('kittool.jks')
+            storePassword '2024.07.11kittooldemo2024.07.11'
+        }
+        release {
+            keyAlias 'honor'
+            keyPassword '2024.07.11kittooldemo2024.07.11'
+            storeFile file('kittool.jks')
+            storePassword '2024.07.11kittooldemo2024.07.11'
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    applicationVariants.configureEach { variant ->
+        variant.outputs.configureEach { output ->
+            def appName = "SuggestionsKitTool" // 自定义应用名称
+            def buildType = variant.buildType.name // 获取构建类型（如 debug 或 release）
+            def versionName = variant.versionName // 获取版本名称
+            def versionCode = variant.versionCode // 获取版本号
+
+            // 自定义 APK 文件名
+            def newApkName = "${appName}-${buildType}-v${versionName}-${versionCode}.apk"
+
+            // 设置输出文件名
+            outputFileName = newApkName
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.6.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.hihonor.mcs:intelligence-suggestion:1.0.0.307'
+}

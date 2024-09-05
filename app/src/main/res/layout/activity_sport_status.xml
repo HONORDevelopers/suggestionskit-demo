@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/bind"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/kit_sport_status_service_bind"/>
+
+
+    <Button
+        android:id="@+id/unbind"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/kit_sport_status_service_unbind"/>
+
+    <Button
+        android:id="@+id/permission_check"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:text="@string/kit_sport_status_permission_check"/>
+
+
+    <Button
+        android:id="@+id/permission_request"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:text="@string/kit_sport_status_permission_request"/>
+    <Button
+        android:id="@+id/init"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="运动状态查询初始化"/>
+
+    <Button
+        android:id="@+id/query"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/kit_sport_status_query"/>
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/clear_log"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/log_result"
+        android:textColor="@color/black"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            />
+    </ScrollView>
+</LinearLayout>

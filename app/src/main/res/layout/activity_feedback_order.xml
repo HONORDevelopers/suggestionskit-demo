@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/feature_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/has_feature"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/has_feature" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(*标注为必填字段)"
+                android:textColor="#FF0000"
+                android:gravity="center"
+                android:padding="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#696969" />
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/intent_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/orderNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/status_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/orderCreateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/startTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/endTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/order_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/feedback_order"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:visibility="visible"
+                android:text="反馈订单" />
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/feedBackOrderTimes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/feedbackOrder_btn_many"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="多次反馈订单" />
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/continuous_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/continuous_gap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/continue_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="连续反馈" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/feature_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/has_feature"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/has_feature" />
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/intent_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/confidence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/create_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/plan_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/recurrent_frequency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/recurrent_begin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/recurrent_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.hihonor.suggestionkittool.view.PlanItemList
+                android:id="@+id/days_of_the_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.hihonor.suggestionkittool.view.PlanItemList
+                android:id="@+id/days_of_the_month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.hihonor.suggestionkittool.view.PlanItemList
+                android:id="@+id/days_of_the_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.hihonor.suggestionkittool.view.PlanItemList
+                android:id="@+id/specified_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.hihonor.suggestionkittool.view.PlanItemList
+                android:id="@+id/begin_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.hihonor.suggestionkittool.view.PlanItemList
+                android:id="@+id/end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/feedbackPlan_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/feedbackPlan" />
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/feedbackPlan_times"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/feedbackPlan_btn_many"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/feedbackPlan_many" />
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/continuous_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.hihonor.suggestionkittool.view.SuggestItemView
+                android:id="@+id/continuous_gap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/continue_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/feedback_continuous_button" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
